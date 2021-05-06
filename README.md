@@ -55,15 +55,10 @@ Requirements:
 - You need `jdk` 8+ installed to compile (and `jre` 8+ to run).
 - Anything else that `paper` requires to build.
 
-If all you want is a paperclip server jar, just run `./tuinity jar`.
-
-Otherwise, to setup the `Tuinity-API` and `Tuinity-Server` repo, just run the following command
-in your project root `./tuinity patch` additionally, after you run `./tuinity patch` you can run `./tuinity build` to build the 
-respective api and server jars.
-
-`./tuinity patch` should initialize the repo such that you can now start modifying and creating
-patches. The folder `Tuinity-API` is the api repo and the `Tuinity-Server` folder
-is the server repo and will contain the source files you will modify.
+- You have to be on linux to build
+- First run ./tuinity patch to patch stuff
+- Then run ./tuinity jar
+- Easy
 
 #### Creating a patch
 Patches are effectively just commits in either `Tuinity-API` or `Tuinity-Server`.
