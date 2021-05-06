@@ -86,8 +86,8 @@ The fork is based off of aikar's EMC framework found [here](https://github.com/s
 _______________________________________________________________________________________________________
 ## Picraft Server Core
 
-I decided to finally make this public.  This is my fork of Tuinity made specifically for the raspberry pi.
+I decided to finally make this public.  This is my fork of Tuinity made specifically for the raspberry pi.  The actual f3screen is just Picraft not Picraft Server Core V4.  That is changed via a plugin that I made.
 
 This also works on x86_64 .
 
-This contains some more optimizations and configuaration options.  Some of the tweaksare LINUX SPECIFIC.  Please do not run this on mac os or windows.  I have tested using Debian 10,Raspbian,Ubuntu Server ARM and Arch linux
+This contains some more optimizations and configuaration options.  Some of the tweaksare LINUX SPECIFIC.  Please do not run this on mac os or windows.  I have tested using Debian 10,Raspbian,Ubuntu Server ARM and Arch linux.
