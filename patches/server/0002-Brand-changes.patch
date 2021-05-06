@@ -13,7 +13,7 @@ index dee00aac05f1acf050f05d4db557a08dd0f301c8..52c0ab1ce46e1f3233ef746d9bc69935
              // Only start Metrics, if it's enabled in the config
              if (config.getBoolean("enabled", true)) {
 -                Metrics metrics = new Metrics("Paper", serverUUID, logFailedRequests, Bukkit.getLogger());
-+                Metrics metrics = new Metrics("Tuinity", serverUUID, logFailedRequests, Bukkit.getLogger()); // Tuinity - we have our own bstats page
++                Metrics metrics = new Metrics("Picraft", serverUUID, logFailedRequests, Bukkit.getLogger()); // Tuinity - we have our own bstats page
  
                  metrics.addCustomChart(new Metrics.SimplePie("minecraft_version", () -> {
                      String minecraftVersion = Bukkit.getVersion();
@@ -35,7 +35,7 @@ index a0f53c9eff04a40780b3ba568dbfc5bbe9bd8504..3bc5cd1e53dd7c94b948e7f57f0dc8e0
  
                      properties.setProperty("eula", "false");
 -                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).\nYou also agree that tacos are tasty, and the best food in the world.");  // Paper - fix lag;
-+                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).");  // Paper - fix lag; // Tuinity - Tacos are disgusting
++                    properties.store(outputstream, "By changing the setting below to TRUE you are indicating your agreement to our EULA (https://account.mojang.com/documents/minecraft_eula).\nYou also agree that tacos are tasty, and the best food in the world.");  // Paper - fix lag; // Tuinity - Tacos are disgusting //Picraft Tacos are amazing
                  } catch (Throwable throwable1) {
                      throwable = throwable1;
                      throw throwable1;
@@ -48,7 +48,7 @@ index 0db00322ebf600245bf9311e547c8c743a60a173..e3253796c70b990e000ed1073f4070fe
  
      public String getServerModName() {
 -        return "Paper"; //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
-+        return "Tuinity"; // Tuinity //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
++        return "Picraft"; // Tuinity //Picraft //Paper - Paper > // Spigot - Spigot > // CraftBukkit - cb > vanilla!
      }
  
      public CrashReport b(CrashReport crashreport) {
@@ -61,7 +61,7 @@ index 03b8d67a5f0088c0254b2099f27e8dcae32a6221..d3c235693094170767cbd12d0e009ce1
  
  public final class CraftServer implements Server {
 -    private final String serverName = "Paper"; // Paper
-+    private final String serverName = "Tuinity"; // Paper // Tuinity
++    private final String serverName = "Picraft"; // Paper // Tuinity
      private final String serverVersion;
      private final String bukkitVersion = Versioning.getBukkitVersion();
      private final Logger logger = Logger.getLogger("Minecraft");
@@ -74,7 +74,7 @@ index 154f3a6a3d37b94c40cb29c305e3aa5fb494850c..ad9dd0f4518b1b6b1d84f5deaf1029de
                          // Paper start - This is some stupid bullshit
                          System.err.println("*** Warning, you've not updated in a while! ***");
 -                        System.err.println("*** Please download a new build as per instructions from https://papermc.io/downloads ***"); // Paper
-+                        System.err.println("*** Please download a new build ***"); // Paper // Tuinity
++                        System.err.println("*** I probably did not update this so ignore the update message ***"); // Paper // Tuinity
                          //System.err.println("*** Server will start in 20 seconds ***");
                          //Thread.sleep(TimeUnit.SECONDS.toMillis(20));
                          // Paper End
