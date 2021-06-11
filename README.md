@@ -12,6 +12,7 @@
     </a>
 </div>
 
+1.17 will come after Yatopia updates.  (meaning that first paper has to update then tuinity then purpur then airport then magma)
 ## How To (Server Admins)
 Tuinity uses the same paperclip jar system that Paper uses.
 
